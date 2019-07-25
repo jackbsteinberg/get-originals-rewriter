@@ -4,12 +4,12 @@
   "description": "Rewriter presubmit script for get-originals work",
   "main": "lib/index.js",
   "dependencies": {
-    "jest": "^24.8.0",
     "jscodeshift": "^0.6.4"
   },
   "devDependencies": {
     "eslint": "^6.1.0",
-    "eslint-config-google": "^0.13.0"
+    "eslint-config-google": "^0.13.0",
+    "jest": "^24.8.0"
   },
   "scripts": {
     "start": "node lib/index.js",

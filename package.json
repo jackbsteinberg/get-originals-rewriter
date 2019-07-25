@@ -16,5 +16,6 @@
     "start": "node lib/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "jacksteinberg@chromium.org"
+  "author": "jacksteinberg@chromium.org",
+  "repository": "https://github.com/jackbsteinberg/lapi-rewriter.git"
 }

@@ -1,1 +1,0 @@
-# LAPI Rewriter Script

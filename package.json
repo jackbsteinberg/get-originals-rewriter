@@ -12,7 +12,7 @@
     "jest": "^24.8.0"
   },
   "scripts": {
-    "start": "node lib/index.js",
+    "start": "jscodeshift -t lib/index.js",
     "test": "jest"
   },
   "author": "Jack Steinberg <jacksteinberg@chromium.org>",

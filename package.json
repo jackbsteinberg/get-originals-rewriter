@@ -11,10 +11,6 @@
     "eslint-config-google": "^0.13.0",
     "jest": "^24.8.0"
   },
-  "scripts": {
-    "start": "node lib/index.js",
-    "test": "jest"
-  },
   "author": "Jack Steinberg <jacksteinberg@chromium.org>",
   "repository": "https://github.com/jackbsteinberg/lapi-rewriter.git"
 }

@@ -15,7 +15,7 @@
     "eslint-config-google": "^0.13.0"
   },
   "scripts": {
-    "start": "jscodeshift -t lib/index.js",
+    "start": "jscodeshift -t lib/remove-console-statements.js",
     "test": "jest"
   },
   "author": "jacksteinberg@chromium.org",

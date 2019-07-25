@@ -16,5 +16,5 @@
     "test": "jest"
   },
   "author": "Jack Steinberg <jacksteinberg@chromium.org>",
-  "repository": "https://github.com/jackbsteinberg/lapi-rewriter.git"
+  "repository": "https://github.com/jackbsteinberg/get-originals-rewriter.git"
 }

@@ -18,6 +18,6 @@
     "start": "node lib/index.js",
     "test": "jest"
   },
-  "author": "jacksteinberg@chromium.org",
+  "author": "Jack Steinberg <jacksteinberg@chromium.org>",
   "repository": "https://github.com/jackbsteinberg/lapi-rewriter.git"
 }

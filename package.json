@@ -12,7 +12,7 @@
     "jest": "^24.8.0"
   },
   "scripts": {
-    "start": "jscodeshift -t lib/index.js",
+    "start": "jscodeshift -t lib/remove-console-statements.js",
     "test": "jest"
   },
   "author": "Jack Steinberg <jacksteinberg@chromium.org>",

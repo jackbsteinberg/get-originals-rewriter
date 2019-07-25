@@ -1,7 +1,7 @@
 {
-  "name": "lapi-rewriter",
+  "name": "get-originals-rewriter",
   "version": "1.0.0",
-  "description": "Rewriter presubmit script for LAPIs",
+  "description": "Rewriter presubmit script for getOriginals work",
   "main": "lib/index.js",
   "directories": {
     "lib": "lib"
@@ -19,5 +19,5 @@
     "test": "jest"
   },
   "author": "jacksteinberg@chromium.org",
-  "repository": "https://github.com/jackbsteinberg/lapi-rewriter.git"
+  "repository": "https://github.com/jackbsteinberg/get-originals-rewriter.git"
 }

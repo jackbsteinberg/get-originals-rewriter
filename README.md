@@ -1,1 +1,1 @@
-# LAPI Rewriter Script
+# getOriginals Rewriter Script

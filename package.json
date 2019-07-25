@@ -1,11 +1,8 @@
 {
-  "name": "lapi-rewriter",
-  "version": "1.0.0",
-  "description": "Rewriter presubmit script for LAPIs",
+  "name": "get-originals-rewriter",
+  "version": "1.0.0-pre",
+  "description": "Rewriter presubmit script for get-originals work",
   "main": "lib/index.js",
-  "directories": {
-    "lib": "lib"
-  },
   "dependencies": {
     "jest": "^24.8.0",
     "jscodeshift": "^0.6.4"

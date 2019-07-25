@@ -1,1 +1,1 @@
-# LAPI Rewriter Script
+# Get-Originals Rewriter Codemod

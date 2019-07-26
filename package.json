@@ -1,0 +1,19 @@
+{
+  "name": "get-originals-rewriter",
+  "version": "1.0.0-pre",
+  "description": "Rewriter presubmit script for get-originals work",
+  "main": "lib/index.js",
+  "dependencies": {
+    "jscodeshift": "^0.6.4"
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-google": "^0.13.0",
+    "jest": "^24.8.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Jack Steinberg <jacksteinberg@chromium.org>",
+  "repository": "https://github.com/jackbsteinberg/get-originals-rewriter.git"
+}

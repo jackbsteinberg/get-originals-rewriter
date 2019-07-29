@@ -17,7 +17,6 @@ module.exports = {
     'func-style': [
       'error',
       'declaration',
-      { 'allowArrowFunctions': true },
     ],
     'no-implicit-globals': 'error',
     'strict': ['error', 'global'],

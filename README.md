@@ -2,6 +2,14 @@
 
 [![Build Status](https://travis-ci.com/jackbsteinberg/get-originals-rewriter.svg?branch=master)](https://travis-ci.com/jackbsteinberg/get-originals-rewriter)
 
+## Introduction
+
+When adding built-in modules to the web platform in a [layered way](),
+we need a way to ensure they're accessing the "original versions"
+of the methods and properties of global built-in objects.
+
+TODO(jacksteinberg): Link to LAPIs explainer
+
 ## Usage
 
 To use the Get-Originals Rewriter, run:

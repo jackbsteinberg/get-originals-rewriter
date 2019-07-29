@@ -14,5 +14,11 @@ module.exports = {
     'ecmaVersion': 2018,
   },
   'rules': {
+    'func-style': [
+      'error',
+      'declaration',
+    ],
+    'no-implicit-globals': 'error',
+    'strict': ['error', 'global'],
   },
 };

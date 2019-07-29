@@ -1,0 +1,2 @@
+# Ensure LF line endings across platforms, especially when comparing test fixtures
+*.js text eol=lf

@@ -4,12 +4,14 @@
 
 ## Introduction
 
-When adding built-in modules to the web platform,
-we need a way to ensure they're accessing the "original versions"
+Chromium is implementing some built-in module proposals using unprivileged JavaScript,
+which necessitates a secure way to ensure the modules access the "original versions"
 of the methods and properties of the global built-ins they rely on.
-We do so using the `std:global` built-in module described in the 
-[Get-Originals Proposal](https://github.com/domenic/get-originals) by [Domenic Denicola](https://github.com/domenic).
-This Get-Originals Rewriter script will run before Chromium code is submitted,
+To make this possible, we need to use the `std:global` built-in module described in the 
+[Get-Originals Proposal](https://github.com/domenic/get-originals) by [Domenic Denicola](https://github.com/domenic),
+and a presubmit script to enforce Get-Originals usage.
+The Get-Originals Rewriter script in this repo will run before Chromium code,
+or other Get-Originals-using code, is submitted,
 to convert existing code to using "original versions" and prevent future code from checking in without them.
 
 ## Usage

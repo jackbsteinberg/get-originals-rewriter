@@ -4,11 +4,13 @@
 
 ## Introduction
 
-When adding built-in modules to the web platform in a [layered way](),
+When adding built-in modules to the web platform in a [layered way](https://github.com/drufball/layered-apis),
 we need a way to ensure they're accessing the "original versions"
 of the methods and properties of global built-in objects.
-
-TODO(jacksteinberg): Link to LAPIs explainer
+We do so using the `std:global` built-in module described in [Domenic Denicola](https://github.com/domenic)'s
+[Get-Originals Proposal](https://github.com/domenic/get-originals).
+This Get-Originals Rewriter script will run before Chromium code is submitted,
+to convert existing code to using originals and prevent future code from checking in without them.
 
 ## Usage
 

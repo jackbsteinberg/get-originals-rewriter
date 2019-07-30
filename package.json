@@ -12,6 +12,7 @@
     "jest": "^24.8.0"
   },
   "scripts": {
+    "rewrite": "jscodeshift -t ./lib/rewriter.js",
     "lint": "./node_modules/.bin/eslint .",
     "test": "jest"
   },

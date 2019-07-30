@@ -7,10 +7,10 @@
 When adding built-in modules to the web platform in a [layered way](https://github.com/drufball/layered-apis),
 we need a way to ensure they're accessing the "original versions"
 of the methods and properties of global built-in objects.
-We do so using the `std:global` built-in module described in [Domenic Denicola](https://github.com/domenic)'s
-[Get-Originals Proposal](https://github.com/domenic/get-originals).
+We do so using the `std:global` built-in module described in the 
+[Get-Originals Proposal](https://github.com/domenic/get-originals) by [Domenic Denicola](https://github.com/domenic).
 This Get-Originals Rewriter script will run before Chromium code is submitted,
-to convert existing code to using originals and prevent future code from checking in without them.
+to convert existing code to using "original versions" and prevent future code from checking in without them.
 
 ## Usage
 
@@ -66,3 +66,5 @@ The rewriter finds all usages of `console` messages
 (e.g. `log`, `warn`, etc) and removes them.
 For `console` method statements it removes the line entirely,
 and for `console` method expressions it replaces it with `undefined`.
+
+*TODO: add more code mods*

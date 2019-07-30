@@ -54,3 +54,15 @@ Options:
 -v, --verbose=0|1|2           show more information about the transform process
                               (default: 0)
 ```
+
+## Rewriter Behavior
+
+The rewriter runs a few individual code mods on the input files
+to get them into a Get-Originals-friendly format:
+
+### Remove `console` Methods
+
+The rewriter finds all usages of `console` messages
+(e.g. `log`, `warn`, etc) and removes them.
+For `console` method statements it removes the line entirely,
+and for `console` method expressions it replaces it with `undefined`.

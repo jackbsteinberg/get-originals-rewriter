@@ -71,3 +71,6 @@ For `console` method statements it removes the line entirely,
 and for `console` method expressions it replaces it with `undefined`.
 
 *TODO: add more code mods*
+
+## Updating Globals
+

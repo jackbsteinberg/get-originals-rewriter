@@ -20,5 +20,6 @@ module.exports = {
     ],
     'no-implicit-globals': 'error',
     'strict': ['error', 'global'],
+    'dot-notation': "error"
   },
 };

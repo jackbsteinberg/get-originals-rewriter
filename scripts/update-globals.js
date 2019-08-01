@@ -33,7 +33,7 @@ async function main() {
  * @return {String} formatted file string
  */
 function getOutputText(globals) {
-  let output = `'use strict';\n`;
+  let output = `'use strict';\n\n`;
   output += `new Set(['`;
   output += globals.join(`',\n  '`);
   output += `']);\n`;
@@ -73,7 +73,6 @@ async function getWindowGlobals() {
             resolve(JSON.parse(data));
           });
         }).on('error', (err) => {
-      console.error('could not get WHATWG globals');
       reject(err);
     });
   });
@@ -85,7 +84,13 @@ async function getWindowGlobals() {
       // eslint-disable-next-line no-unused-vars
       const {_dependencies, _reallyDependsOnWindow, ...globalNames} =
           elt.idl.idlNames;
-      globals = globals.concat(Object.getOwnPropertyNames(globalNames));
+      globals = globals.concat(
+          Object.getOwnPropertyNames(globalNames)
+              .filter((elt) => {
+                return globalNames[elt].name === 'namespace' ||
+                  globalNames[elt].name === 'interface';
+              })
+      );
     }
   });
 

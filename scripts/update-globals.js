@@ -87,8 +87,8 @@ async function getWindowGlobals() {
       globals = globals.concat(
           Object.getOwnPropertyNames(globalNames)
               .filter((elt) => {
-                return globalNames[elt].name === 'namespace' ||
-                  globalNames[elt].name === 'interface';
+                return globalNames[elt].type === 'namespace' ||
+                  globalNames[elt].type === 'interface';
               })
       );
     }

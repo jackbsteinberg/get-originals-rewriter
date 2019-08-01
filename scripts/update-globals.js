@@ -84,7 +84,7 @@ async function getWindowGlobals() {
     if (elt.idl['idlNames']) {
       // eslint-disable-next-line no-unused-vars
       const {_dependencies, _reallyDependsOnWindow, ...globalNames} =
-          elt.idl['idlNames'];
+          elt.idl.idlNames;
       globals = globals.concat(Object.getOwnPropertyNames(globalNames));
     }
   });

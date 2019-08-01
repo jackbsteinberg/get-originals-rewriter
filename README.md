@@ -74,5 +74,11 @@ and for `console` method expressions it replaces it with `undefined`.
 
 ## Updating Globals
 
-To maintain a up-to-date set of globals,
-run the 
+To maintain a up-to-date set of globals, run:
+
+```bash
+npm run update-globals
+```
+
+This will refresh the pool of observed JavaScript and Web global properties,
+so all will be replaced by the Get-Originals versions.

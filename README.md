@@ -74,3 +74,5 @@ and for `console` method expressions it replaces it with `undefined`.
 
 ## Updating Globals
 
+To maintain a up-to-date set of globals,
+run the 

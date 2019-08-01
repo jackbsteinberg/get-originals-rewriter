@@ -21,7 +21,7 @@ async function main() {
 
   const allGlobals = jsGlobals.concat(windowGlobals);
   const outputText = getOutputText(allGlobals);
-  fs.writeFileSync(path.join(__dirname, '../scripts/set-globals.js'),
+  fs.writeFileSync(path.join(__dirname, '../lib/globals-set.js'),
       outputText);
 }
 

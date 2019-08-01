@@ -81,7 +81,7 @@ async function getWindowGlobals() {
   // Take relevant globals data from crawl
   let globals = [];
   windowGlobals.results.forEach((elt) => {
-    if (elt.idl['idlNames']) {
+    if (elt.idl.idlNames) {
       // eslint-disable-next-line no-unused-vars
       const {_dependencies, _reallyDependsOnWindow, ...globalNames} =
           elt.idl.idlNames;

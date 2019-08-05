@@ -34,7 +34,7 @@ async function main() {
  */
 function getOutputText(globals) {
   let output = `'use strict';\n\n`;
-  output += `new Set(['`;
+  output += `module.exports = new Set(['`;
   output += globals.join(`',\n  '`);
   output += `']);\n`;
   return output;

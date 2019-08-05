@@ -1,2 +1,3 @@
 /node_modules
+# Tracking globals-set.js until crawl.json gets to a stable state
 # /lib/globals-set.js

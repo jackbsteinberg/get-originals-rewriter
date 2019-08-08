@@ -1,3 +1,4 @@
 /node_modules
+.vscode
 # Tracking globals-set.js until crawl.json gets to a stable state
 # /lib/globals-set.js

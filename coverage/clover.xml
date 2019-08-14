@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1565720163243" clover="3.2.0">
+  <project timestamp="1565720163243" name="All files">
+    <metrics statements="164" coveredstatements="159" conditionals="86" coveredconditionals="81" methods="23" coveredmethods="23" elements="273" coveredelements="263" complexity="0" loc="164" ncloc="164" packages="2" files="9" classes="9"/>
+    <package name="lib">
+      <metrics statements="74" coveredstatements="69" conditionals="41" coveredconditionals="36" methods="13" coveredmethods="13"/>
+      <file name="globals-set.js" path="/Users/jacksteinberg/code/get-originals-rewriter/lib/globals-set.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+      </file>
+      <file name="imports.js" path="/Users/jacksteinberg/code/get-originals-rewriter/lib/imports.js">
+        <metrics statements="26" coveredstatements="24" conditionals="20" coveredconditionals="18" methods="3" coveredmethods="3"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="15" count="32" type="stmt"/>
+        <line num="16" count="32" type="cond" truecount="7" falsecount="1"/>
+        <line num="18" count="12" type="stmt"/>
+        <line num="22" count="13" type="stmt"/>
+        <line num="24" count="4" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="43" count="32" type="stmt"/>
+        <line num="45" count="32" type="cond" truecount="2" falsecount="0"/>
+        <line num="46" count="21" type="stmt"/>
+        <line num="51" count="32" type="cond" truecount="7" falsecount="1"/>
+        <line num="53" count="12" type="stmt"/>
+        <line num="54" count="12" type="stmt"/>
+        <line num="58" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="59" count="5" type="stmt"/>
+        <line num="61" count="9" type="stmt"/>
+        <line num="62" count="9" type="stmt"/>
+        <line num="63" count="9" type="stmt"/>
+        <line num="67" count="11" type="stmt"/>
+        <line num="68" count="11" type="stmt"/>
+        <line num="70" count="0" type="stmt"/>
+        <line num="81" count="12" type="stmt"/>
+        <line num="83" count="26" type="stmt"/>
+        <line num="91" count="1" type="stmt"/>
+      </file>
+      <file name="originals-helper.js" path="/Users/jacksteinberg/code/get-originals-rewriter/lib/originals-helper.js">
+        <metrics statements="23" coveredstatements="20" conditionals="21" coveredconditionals="18" methods="5" coveredmethods="5"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="11" count="52" type="stmt"/>
+        <line num="12" count="52" type="cond" truecount="2" falsecount="0"/>
+        <line num="13" count="35" type="stmt"/>
+        <line num="16" count="17" type="stmt"/>
+        <line num="25" count="17" type="stmt"/>
+        <line num="26" count="17" type="cond" truecount="1" falsecount="1"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="29" count="17" type="stmt"/>
+        <line num="38" count="52" type="cond" truecount="2" falsecount="0"/>
+        <line num="51" count="64" type="cond" truecount="7" falsecount="1"/>
+        <line num="53" count="24" type="stmt"/>
+        <line num="57" count="26" type="stmt"/>
+        <line num="59" count="8" type="stmt"/>
+        <line num="61" count="4" type="stmt"/>
+        <line num="63" count="2" type="stmt"/>
+        <line num="65" count="0" type="stmt"/>
+        <line num="80" count="20" type="cond" truecount="6" falsecount="1"/>
+        <line num="83" count="7" type="stmt"/>
+        <line num="85" count="2" type="stmt"/>
+        <line num="89" count="11" type="stmt"/>
+        <line num="91" count="0" type="stmt"/>
+        <line num="95" count="1" type="stmt"/>
+      </file>
+      <file name="rewriter.js" path="/Users/jacksteinberg/code/get-originals-rewriter/lib/rewriter.js">
+        <metrics statements="24" coveredstatements="24" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="32" count="12" type="stmt"/>
+        <line num="33" count="12" type="stmt"/>
+        <line num="37" count="12" type="stmt"/>
+        <line num="39" count="12" type="stmt"/>
+        <line num="40" count="350" type="stmt"/>
+        <line num="41" count="298" type="stmt"/>
+        <line num="42" count="332" type="stmt"/>
+        <line num="43" count="331" type="stmt"/>
+        <line num="44" count="12" type="stmt"/>
+        <line num="46" count="12" type="stmt"/>
+        <line num="47" count="12" type="stmt"/>
+        <line num="48" count="12" type="stmt"/>
+        <line num="49" count="12" type="stmt"/>
+        <line num="52" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="lib.mods">
+      <metrics statements="90" coveredstatements="90" conditionals="45" coveredconditionals="45" methods="10" coveredmethods="10"/>
+      <file name="clean-console.js" path="/Users/jacksteinberg/code/get-originals-rewriter/lib/mods/clean-console.js">
+        <metrics statements="15" coveredstatements="15" conditionals="8" coveredconditionals="8" methods="2" coveredmethods="2"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="13" count="362" type="cond" truecount="2" falsecount="0"/>
+        <line num="14" count="334" type="stmt"/>
+        <line num="17" count="28" type="stmt"/>
+        <line num="18" count="28" type="cond" truecount="2" falsecount="0"/>
+        <line num="19" count="3" type="stmt"/>
+        <line num="22" count="25" type="stmt"/>
+        <line num="23" count="25" type="stmt"/>
+        <line num="24" count="25" type="stmt"/>
+        <line num="33" count="362" type="cond" truecount="2" falsecount="0"/>
+        <line num="34" count="11" type="stmt"/>
+        <line num="35" count="11" type="cond" truecount="2" falsecount="0"/>
+        <line num="36" count="6" type="stmt"/>
+        <line num="38" count="5" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+      </file>
+      <file name="replace-constructors.js" path="/Users/jacksteinberg/code/get-originals-rewriter/lib/mods/replace-constructors.js">
+        <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="17" count="350" type="cond" truecount="4" falsecount="0"/>
+        <line num="19" count="12" type="stmt"/>
+        <line num="20" count="12" type="stmt"/>
+        <line num="21" count="12" type="stmt"/>
+        <line num="22" count="12" type="stmt"/>
+        <line num="23" count="12" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+      </file>
+      <file name="replace-get-set.js" path="/Users/jacksteinberg/code/get-originals-rewriter/lib/mods/replace-get-set.js">
+        <metrics statements="22" coveredstatements="22" conditionals="14" coveredconditionals="14" methods="2" coveredmethods="2"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="23" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="34" count="332" type="cond" truecount="5" falsecount="0"/>
+        <line num="37" count="6" type="stmt"/>
+        <line num="38" count="6" type="stmt"/>
+        <line num="40" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="41" count="3" type="stmt"/>
+        <line num="44" count="3" type="stmt"/>
+        <line num="48" count="3" type="stmt"/>
+        <line num="51" count="3" type="cond" truecount="5" falsecount="0"/>
+        <line num="54" count="1" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
+        <line num="56" count="1" type="stmt"/>
+        <line num="58" count="2" type="stmt"/>
+        <line num="59" count="2" type="stmt"/>
+        <line num="62" count="3" type="stmt"/>
+        <line num="64" count="3" type="stmt"/>
+        <line num="66" count="3" type="stmt"/>
+        <line num="70" count="1" type="stmt"/>
+      </file>
+      <file name="replace-methods.js" path="/Users/jacksteinberg/code/get-originals-rewriter/lib/mods/replace-methods.js">
+        <metrics statements="28" coveredstatements="28" conditionals="15" coveredconditionals="15" methods="3" coveredmethods="3"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="19" count="10" type="stmt"/>
+        <line num="20" count="10" type="stmt"/>
+        <line num="33" count="10" type="cond" truecount="4" falsecount="0"/>
+        <line num="34" count="7" type="stmt"/>
+        <line num="35" count="7" type="stmt"/>
+        <line num="47" count="3" type="stmt"/>
+        <line num="57" count="298" type="cond" truecount="5" falsecount="0"/>
+        <line num="60" count="14" type="stmt"/>
+        <line num="61" count="14" type="stmt"/>
+        <line num="62" count="14" type="stmt"/>
+        <line num="63" count="14" type="stmt"/>
+        <line num="65" count="14" type="cond" truecount="2" falsecount="0"/>
+        <line num="66" count="4" type="stmt"/>
+        <line num="67" count="4" type="stmt"/>
+        <line num="70" count="14" type="stmt"/>
+        <line num="71" count="14" type="stmt"/>
+        <line num="72" count="11" type="stmt"/>
+        <line num="73" count="14" type="stmt"/>
+        <line num="75" count="14" type="cond" truecount="4" falsecount="0"/>
+        <line num="76" count="4" type="stmt"/>
+        <line num="77" count="4" type="stmt"/>
+        <line num="80" count="14" type="stmt"/>
+        <line num="82" count="14" type="stmt"/>
+        <line num="84" count="14" type="stmt"/>
+        <line num="88" count="1" type="stmt"/>
+      </file>
+      <file name="replace-window-functions.js" path="/Users/jacksteinberg/code/get-originals-rewriter/lib/mods/replace-window-functions.js">
+        <metrics statements="15" coveredstatements="15" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="19" count="331" type="cond" truecount="4" falsecount="0"/>
+        <line num="20" count="3" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="23" count="3" type="stmt"/>
+        <line num="24" count="3" type="stmt"/>
+        <line num="26" count="3" type="stmt"/>
+        <line num="27" count="6" type="stmt"/>
+        <line num="29" count="3" type="stmt"/>
+        <line num="30" count="3" type="stmt"/>
+        <line num="31" count="3" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

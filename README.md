@@ -71,3 +71,14 @@ For `console` method statements it removes the line entirely,
 and for `console` method expressions it replaces it with `undefined`.
 
 *TODO: add more code mods*
+
+## Updating Globals
+
+To maintain a up-to-date set of globals, run:
+
+```bash
+npm run update-globals
+```
+
+This will refresh the pool of observed JavaScript and Web global properties,
+so all will be replaced by the Get-Originals versions.

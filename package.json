@@ -13,7 +13,7 @@
   },
   "scripts": {
     "update-globals": "node ./scripts/update-globals.js",
-    "rewrite": "node ./lib/runner.js",
+    "rewrite": "node ./lib/index.js",
     "lint": "./node_modules/.bin/eslint .",
     "test": "jest"
   },

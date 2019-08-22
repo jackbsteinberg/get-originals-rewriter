@@ -14,7 +14,7 @@
   },
   "scripts": {
     "update-globals": "node ./scripts/update-globals.js",
-    "rewrite": "jscodeshift -t ./lib/rewriter.js",
+    "rewrite": "node ./lib/rewriter.js",
     "lint": "./node_modules/.bin/eslint .",
     "test": "jest"
   },

@@ -25,8 +25,6 @@ npm run rewrite PATH
 
 where `PATH` is a file or directory of files to be rewritten.
 
-The Get-Originals Rewriter provides the following options:
-
 ## Rewriter Behavior
 
 The rewriter runs a few individual code mods on the input files

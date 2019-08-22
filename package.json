@@ -4,7 +4,6 @@
   "description": "Rewriter presubmit script for get-originals work",
   "main": "lib/index.js",
   "dependencies": {
-    "jscodeshift": "^0.6.4",
     "ts-morph": "^3.1.3"
   },
   "devDependencies": {
@@ -14,7 +13,7 @@
   },
   "scripts": {
     "update-globals": "node ./scripts/update-globals.js",
-    "rewrite": "jscodeshift -t ./lib/rewriter.js",
+    "rewrite": "node ./lib/index.js",
     "lint": "./node_modules/.bin/eslint .",
     "test": "jest"
   },

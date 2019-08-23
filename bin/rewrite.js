@@ -8,10 +8,12 @@ const rewriter = require('../lib/rewriter');
  * @param {string} filePath - the path to the file
  */
 function rewriteFile(filePath) {
-  rewriter({
+  const output = rewriter({
     path: filePath,
     source: fs.readFileSync(inputPath, 'utf8'),
   });
+
+  fs.writeFileSync(filePath, output);
 }
 
 // rewriter execution

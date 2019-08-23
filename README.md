@@ -20,7 +20,7 @@ to convert existing code to using "original versions" and prevent future code fr
 To use the Get-Originals Rewriter, run:
 
 ```
-npm run rewrite PATH
+./bin/rewrite.js PATH
 ```
 
 where `PATH` is a file or directory of files to be rewritten.

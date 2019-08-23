@@ -2,9 +2,9 @@
   "name": "get-originals-rewriter",
   "version": "1.0.0-pre",
   "description": "Rewriter presubmit script for get-originals work",
-  "main": "lib/index.js",
+  "main": "lib/rewriter.js",
+  "bin": "bin/rewrite.js",
   "dependencies": {
-    "jscodeshift": "^0.6.4",
     "ts-morph": "^3.1.3"
   },
   "devDependencies": {
@@ -14,7 +14,6 @@
   },
   "scripts": {
     "update-globals": "node ./scripts/update-globals.js",
-    "rewrite": "jscodeshift -t ./lib/rewriter.js",
     "lint": "./node_modules/.bin/eslint .",
     "test": "jest"
   },

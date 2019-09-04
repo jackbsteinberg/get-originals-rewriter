@@ -15,6 +15,16 @@ The Get-Originals Rewriter script in this repo will run before Chromium code,
 or other Get-Originals-using code, is submitted,
 to convert existing code to using "original versions" and prevent future code from checking in without them.
 
+## Usage
+
+To use the Get-Originals Rewriter, run:
+
+```
+./bin/rewrite.js PATH
+```
+
+where `PATH` is a file or directory of files to be rewritten.
+
 ## Example Rewrites
 
 ### Constructors
@@ -105,46 +115,46 @@ const s = Window_status_get();
 Window_status_set('new_status');
 ```
 
-## Usage
-
-To use the Get-Originals Rewriter, run:
-
-```
-./bin/rewrite.js PATH
-```
-
-where `PATH` is a file or directory of files to be rewritten.
-
 ## Rewriter Behavior
 
-The Rewriter runs a few individual code mods on the input files
-to get them into a Get-Originals-friendly format:
+The Rewriter runs individual code mods on the input files
+to get them into a Get-Originals-friendly format.
 
 ### Remove `console` Methods
 
-The Rewriter finds all usages of `console` messages
+This mod finds all usages of `console` methods
 (e.g. `log`, `warn`, etc) and removes them.
 For `console` method statements it removes the line entirely,
 and for `console` method expressions it replaces it with `undefined`.
 
 ### Replace Constructors
-The Rewriter finds all constructors that come from built-in APIs,
+
+This mod finds all constructors that come from built-in APIs,
 and adds imports for the Get-Originals versions.
 The node itself is not replaced,
-but it would be a reference to a Get-Originals API,
-e.g. `const d = new Document();` referring to
-`import Document from "std:global/Document";`.
+but the source of the class would be a Get-Originals API
+(e.g. `const d = new Document();` referring to
+`import Document from "std:global/Document";`).
 
 ### Replace Gets and Sets
-The Rewriter finds accesses and assignments to built-in values,
-specifically property accesses, and replaces them with Get-Originals-safe versions.
-This would take something like `window.status = 'open';` and change it to
-`Window_status_set('open');`.
+
+This mod finds accesses and assignments to built-in values
+and replaces them with Get-Originals-safe versions.
+This would take something like `const p = url.pathname;` and change it to
+`const p = Reflect_apply(URL_pathname_get, url)`.
+The mod also handles special cases,
+such as [properties of the global object](#Window-Gets-/-Sets)
+like `status = 'open'`,
+which rewrites to `Window_status_set('open');`.
 
 ### Replace Methods
-The Rewriter finds methods on instances of built-in classes and updates them to
+
+This mod finds methods on instances of built-in classes and updates them to
 Get-Originals-safe versions of the methods,
 using the original of the `apply` function from `Reflect`.
 This changes something like `a.toString();` to 
 `Reflect_apply(Array_toString, a, []);`.
+The mod also handles special cases,
+like [namespace methods](#Namespace-Methods) (`Math.max()`)
+and [static methods](#Static-Methods) (`Array.isArray()`).
 

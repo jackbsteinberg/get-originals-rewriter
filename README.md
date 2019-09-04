@@ -90,7 +90,7 @@ import { isArray_static as Array_isArray_static } from "std:global/Array"
 const b = Array_isArray_static(['a', 'b', 'c']);
 ```
 
-### Window Functions
+### Window Methods
 ```js
 alert('Hello World!');
 

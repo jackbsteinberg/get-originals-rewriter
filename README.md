@@ -86,7 +86,7 @@ const b = Array.isArray(['a', 'b', 'c']);
 
 // Rewrites to
 
-import { isArray_static as Array_isArray_static } from "std:global/Array"
+import { isArray_static as Array_isArray_static } from "std:global/Array";
 const b = Array_isArray_static(['a', 'b', 'c']);
 ```
 

@@ -76,7 +76,7 @@ const m = Math.max(1, 10);
 
 // Rewrites to
 
-import { max as Math_max } from "std:global/Math"
+import { max as Math_max } from "std:global/Math";
 const m = Math_max(1, 10);
 ```
 

@@ -70,7 +70,7 @@ const c = Reflect_apply(URL_pathname_get, u);
 Reflect_apply(URL_pathname_set, u, ['new_path']);
 ```
 
-### Namespace Methods
+### Namespaced Functions
 ```js
 const m = Math.max(1, 10);
 

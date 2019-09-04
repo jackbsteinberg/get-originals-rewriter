@@ -127,7 +127,7 @@ This mod finds all usages of `console` methods
 For `console` method statements it removes the line entirely,
 and for `console` method expressions it replaces it with `undefined`.
 
-### Replace Constructors
+### Import Constructors
 
 This mod finds all constructors that come from built-in APIs,
 and adds imports for the Get-Originals versions.

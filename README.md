@@ -133,28 +133,31 @@ This mod finds all constructors that come from built-in APIs,
 and adds imports for the Get-Originals versions.
 The node itself is not replaced,
 but the source of the class would be a Get-Originals API
-(e.g. `const d = new Document();` referring to
-`import Document from "std:global/Document";`).
+(e.g. `const d = new Document()` referring to
+`import Document from "std:global/Document"`).
 
 ### Replace Gets and Sets
 
 This mod finds accesses and assignments to built-in values
 and replaces them with Get-Originals-safe versions.
-This would take something like `const p = url.pathname;` and change it to
+This would take something like `const p = url.pathname` and change it to
 `const p = Reflect_apply(URL_pathname_get, url)`.
 The mod also handles special cases,
 such as [properties of the global object](#Window-Gets-/-Sets)
 like `status = 'open'`,
-which rewrites to `Window_status_set('open');`.
+which rewrites to `Window_status_set('open')`.
 
 ### Replace Methods
 
 This mod finds methods on instances of built-in classes and updates them to
 Get-Originals-safe versions of the methods,
 using the original of the `apply` function from `Reflect`.
-This changes something like `a.toString();` to 
-`Reflect_apply(Array_toString, a, []);`.
+This changes something like `a.toString()` to 
+`Reflect_apply(Array_toString, a, [])`.
 The mod also handles special cases,
-like [namespace methods](#Namespace-Methods) (`Math.max()`)
-and [static methods](#Static-Methods) (`Array.isArray()`).
+like [namespace methods](#Namespace-Methods) (`Math.max()`),
+[static methods](#Static-Methods) (`Array.isArray()`),
+and, similar to the get/set mod,
+replaces global object methods
+(e.g. `alert('text')`, which translates to `Window_alert('text')`).
 
